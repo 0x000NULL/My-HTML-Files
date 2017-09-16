@@ -1,0 +1,62 @@
+<html>
+<Head>
+    </Head>
+<Body>
+<script>
+!function(){function n(n,e,t){return n.getAttribute(e)||t}function e(n){return document.getElementsByTagName(n)}function t(){var t=e("script"),o=t.length,i=t[o-1];return{l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","99,99,99"),n:n(i,"count",99)}}function o(){c=u.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,a=u.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight}function i(){l.clearRect(0,0,c,a);var n,e,t,o,u,d,x=[w].concat(y);y.forEach(function(i){for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>c||i.x<0?-1:1,i.ya*=i.y>a||i.y<0?-1:1,l.fillRect(i.x-.5,i.y-.5,1,1),e=0;e<x.length;e++)n=x[e],i!==n&&null!==n.x&&null!==n.y&&(o=i.x-n.x,u=i.y-n.y,d=o*o+u*u,d<n.max&&(n===w&&d>=n.max/2&&(i.x-=.03*o,i.y-=.03*u),t=(n.max-d)/n.max,l.beginPath(),l.lineWidth=t/2,l.strokeStyle="rgba("+m.c+","+(t+.2)+")",l.moveTo(i.x,i.y),l.lineTo(n.x,n.y),l.stroke()));x.splice(x.indexOf(i),1)}),r(i)}var c,a,u=document.createElement("canvas"),m=t(),d="c_n"+m.l,l=u.getContext("2d"),r=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(n){window.setTimeout(n,1e3/45)},x=Math.random,w={x:null,y:null,max:2e4};u.id=d,u.style.cssText="position:fixed;top:0;left:0;z-index:"+m.z+";opacity:"+m.o,e("body")[0].appendChild(u),o(),window.onresize=o,window.onmousemove=function(n){n=n||window.event,w.x=n.clientX,w.y=n.clientY},window.onmouseout=function(){w.x=null,w.y=null};for(var y=[],s=0;m.n>s;s++){var f=x()*c,h=x()*a,g=2*x()-1,p=2*x()-1;y.push({x:f,y:h,xa:g,ya:p,max:6e3})}setTimeout(function(){i()},100)}();
+</script>
+    <p> Browsers usually instert quotations marks around the q element.</P>
+    <p>WWF's Goal is to: <q> Build a future where paople live in harmony with nature.</q></p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the furture of nature. The world's leading conservation organization, WWF works in 100 countries and is supported bu 1.2 million members in the United States and close to 5 million globally.</blockquote>    
+    <p> the <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <P> Marking up abbriviations can give usuful information to browsers, and search engines.</P>
+   <P> The HTML address of element define contact information (author/owner) of a document or article.</P>
+    <address>
+    Written by Ethan Aldrich<br>
+        Visit us at :<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>  
+    <p>The HTML cite element defines the title of a work.</p>
+    <p> Browsers usually display cite elements in italic.</p>
+    <img src="pic.jpg" width="220" alt="the Scream">
+    <p><cite>The Scream</cite> By Edvard Munch. Painted in 1893.</p>
+    <p>If your browser supports bi-directinal override (BDO), the next line will be writtel right to left (RTF):</p>
+    <bdo dir="rtl"> This line will be written from right to left</bdo>    
+    <h1 style="background-color:Tomato">Tomato</h1>
+    <h1 style="background-color:Orange"></h1>
+    <h1 style="background-color:DodgerBlue">DodgerBlue</h1>
+    <h1 style="background-color:MediumSeaGreen">MediumSeaGreen</h1>
+    <h1 style="background-color:Gray">Gray</h1>
+    <h1 style="background-color:SlateBlue">SlateBlue</h1>
+    <h1 style="background-color:Violet">Violet</h1>
+    <h1 style="background-color:lightgray">LightGray</h1>   
+    <p style="background-color:MediumSeaGreen;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus, lacus condimentum ullamcorper tempus, velit felis ultrices mi, vitae finibus velit massa vitae massa. Curabitur sit amet auctor lacus, ac aliquet urna. Maecenas accumsan mauris a nunc cursus tristique. Maecenas pharetra neque ac pellentesque mollis. Quisque condimentum scelerisque mauris tristique semper. Suspendisse sapien ex, placerat eget interdum viverra, tristique non justo. Suspendisse finibus at eros ac sollicitudin. Phasellus luctus eleifend mauris sit amet varius. Nunc eu dignissim nunc. In hac habitasse platea dictumst.
+
+Nullam elementum urna eget lorem consequat gravida. Phasellus eu fermentum leo. Curabitur vitae nulla quis purus volutpat consequat. Nullam vel libero venenatis, aliquet neque eu, fermentum turpis. Suspendisse non congue arcu. Aliquam a arcu iaculis, facilisis ex at, feugiat quam. Fusce sed leo ornare neque malesuada elementum vel non magna. Aenean congue nulla et gravida dictum. Nulla sit amet sem dui. Sed vulputate elit at sem finibus, id volutpat nisi condimentum. Cras quis imperdiet est, in bibendum lectus.
+    </p>
+    <h1 style="background-color:Tomato">Lorum Ipsum</h1>    
+    <P> this text is normal.</P
+<p> <b> this text is bold</b></p>
+<p> <i> this is itilizized</i></p>
+<p> <strong> This is Strong</strong> </p>
+<p> <em> this is emphazised</em> </p>
+<h2>HTML <small> Small</small> Formatting</h2>
+<h2> HTML <mark>Mark </mark>Formatting</h2>
+    <p>my favorite color is <del>Gray</del> red.</p>
+    <p>the ins element represent insterted (added) text. </p>
+    <p>My favorite color is <del>blue</del>red </p>
+    <p> <mark>text is mark</mark></p>
+<h2> The title attribute</h2>
+
+<p title="I'm a tooltip">
+Mouse over this paragraph, to display the title</p>
+
+<a href="github.com/facebook/fbctf"> Facebook CTF</a>
+    
+    <img src="smokingvader.jpg" width=1300px height=800px>  
+    </Body>
+</Html>
