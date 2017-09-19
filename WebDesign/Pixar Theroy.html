@@ -1,0 +1,286 @@
+
+<!DOCTYPE HTML>
+<html xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Article">
+<head>
+<title>The Pixar Theory</title>
+<meta property='og:locale' content='en_US'/>
+<meta property='og:type' content='article'/>
+<meta property='og:title' content='The Pixar Theory an Interactive Story, by @97thfloor #pixartheory'/>
+<meta property='og:description' content='Every Pixar movie is connected. This interactive graphic tells the story of how and why.'/>
+<meta property='og:url' content='http://www.pixartheory.com'/>
+<meta property='og:site_name' content='The Pixar Theory'/>
+<meta property='og:image' content='http://www.97thfloor.com/wp-content/uploads/2013/07/The-Pixar-Theory-share-1.jpg'/>
+<meta property='og:image' content='http://www.97thfloor.com/wp-content/uploads/2013/07/The-Pixar-Theory-share-2.jpg'/>
+<meta property='og:image' content='http://www.97thfloor.com/wp-content/uploads/2013/07/kitty.jpg'/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@97thfloor"/>
+<meta name="twitter:title" content="The Pixar Theory an Interactive Story, by @97thfloor #pixartheory"/>
+<meta name="twitter:description" content="Every Pixar movie is connected. This interactive graphic tells the story of how and why.">
+<meta name="twitter:creator" content="@97thFloor"/>
+<meta name="twitter:image" content="http://www.97thfloor.com/wp-content/uploads/2013/07/The-Pixar-Theory-share-1.jpg"/>
+
+<meta itemprop="name" content="The Pixar Theory an Interactive Story, by +97thfloor #pixartheory">
+<meta itemprop="image" content="http://www.97thfloor.com/wp-content/uploads/2013/07/The-Pixar-Theory-share-1.jpg">
+
+<link rel="icon" type="image/ico" href="images/favicon.ico" />
+<link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="js/fancybox/jquery.fancybox.css?v=2.1.5" />
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<audio id="boo_sound" src="sounds/kitty-audio.wav" src="sounds/kitty-audio.ogg"></audio>
+	<div class="page">
+		<div class="container">
+			<div class="row">
+				<div class="film" alt="Toy Story">
+					<div class="film_icon toystory1"></div>
+					<span class="year top_row">1995</span>
+				</div>
+				<div class="film" alt="A Bug's Life">
+					<div class="film_icon bugslife"></div>
+					<span class="year top_row">1998</span>
+				</div>
+				<div class="film" alt="Toy Story 2">
+					<div class="film_icon toystory2"></div>
+					<span class="year top_row">1999</span>
+				</div>
+				<div class="film" alt="Monsters, Inc.">
+					<div class="film_icon moninc"></div>
+					<span class="year top_row">2001</span>
+				</div>
+				<div class="film" alt="Finding Nemo">
+					<div class="film_icon nemo"></div>
+					<span class="year top_row">2003</span>
+				</div>
+				<div class="film" alt="The Incredibles">
+					<div class="film_icon incredibles"></div>
+					<span class="year top_row">2004</span>
+				</div>
+				<div class="film" alt="Cars">
+					<div class="film_icon cars1"></div>
+					<span class="year top_row">2006</span>
+				</div>
+					<div class="clear"></div>
+			</div>
+			<div class="row_title">
+				<h1 id="main_title">The&bull;Pixar&bull;Theory</h1>
+			</div>
+			<div class="container_1" id="boo_middle">
+				<div class="card">
+    				<div class="card front">
+       					<img src="images/boo-bubble.png"/>
+    				</div>
+    				<div class="card back">
+       					<img src="images/boo-witch-bubble.png"/>
+    				</div>
+				</div>    
+			</div>
+			<div id="myCanvas">
+			</div>
+			<div class="row">
+				<div class="film" alt="Ratatouille">
+					<div class="film_icon ratatouille"></div>
+					<span class="year bottom_row">2007</span>
+				</div>
+				<div class="film" alt="WALL-E">
+					<div class="film_icon walle"></div>
+					<span class="year bottom_row">2008</span>
+				</div>
+				<div class="film" alt="Up">
+					<div class="film_icon up"></div>
+					<span class="year bottom_row">2009</span>
+				</div>
+				<div class="film" alt="Toy Story 3">
+					<div class="film_icon toystory3"></div>
+					<span class="year bottom_row">2010</span>
+				</div>
+				<div class="film" alt="Cars 2">
+					<div class="film_icon cars2"></div>
+					<span class="year bottom_row">2011</span>
+				</div>
+				<div class="film" alt="Brave">
+					<div class="film_icon brave"></div>
+					<span class="year bottom_row">2012</span>
+				</div>
+				<div class="film" alt="Monsters University">
+					<div class="film_icon monu"></div>
+					<span class="year bottom_row">2013</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div><!-- container -->
+			<div id="sub_title">
+				<div style="color:black;font-family: 'DroidSerif'; font-size:23px;">All of the Pixar movies actually exist within the same universe!</div>
+				 You're currently viewing the Pixar movies in chronological order.
+				</div>
+			<div id="scramble">
+				<img src="images/door.png" style="float:left;" />
+				<div id="discover">
+					Enter The Pixar Universe<br />
+					<!-- 	<img src="images/arrow-notification.png" id="arrow" style="position:absolute;"/> -->
+				</div>
+			</div>
+			<div class="bottom_container">
+				<div class="line_sep"></div>
+				<div class="movie_title_left">
+					<span id="movie_year"></span>
+				</div>
+				<div class="movie_title_right">
+					<h2 id="movie_title"></h2>
+					
+					<p><span style="font-size:16px; color:#000">Evidence <span style="font-size:12px; color:#939598">(click to view screenshot)</span></p>
+				</div>
+				
+					<div class="clear"></div>
+				<div class="bottom_left">
+					<img id="movie_main_pic" />
+				</div>
+				<div class="bottom_mid">
+					<div id="movie_desc"></div>
+				</div>
+				<div class="bottom_right">
+					<div id="thumb_holder"></div>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="long_bottom"></div>
+				<div id="end_left"></div>
+				<div id="end_right">
+					<!-- <a class="small-link" href="giuseppe-garibaldi-the-thousand.html" target="_blank">About Giuseppe Garibaldi</a> -->
+					<h2 id="movie_title_end">Discuss The Pixar Theory</h2>
+					<div id="livefyre-comments"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+	</div><!-- page -->
+	<div id="arrow_bubble"></div>
+	<div id="footer">
+		<div id="footer_inner">
+			<div id="footer_left">
+				<div class="bottom_btn_holder">
+					<a href="http://97thfloor.com" target="_blank">
+						<img src="images/97thfloorlogo.png" style="margin-top:-3px"; />
+					</a>
+						<div class="soc_holder">
+<a href="https://twitter.com/97thfloor" class="twitter-follow-button" data-show-count="false">Follow @97thfloor</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						</div>
+						<div class="soc_holder">
+						<!-- Place this tag where you want the widget to render. -->
+							<div class="g-follow" data-annotation="none" data-height="24" data-href="https://plus.google.com/105281567707216218295" data-rel="publisher"></div>
+						<!-- Place this tag after the last widget tag. -->
+						<script type="text/javascript">
+						  (function() {
+						    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+						    po.src = 'https://apis.google.com/js/plusone.js';
+						    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+						  })();
+						</script>
+						</div>
+					<div class="clear"></div>
+				</div>
+				<div class="bottom_btn_holder">
+					<a id="shareButton">share</a>
+					<div class="soc_holder">
+						<fb:like href="http://pixartheory.com/" send="false" layout="button_count" width="150" show_faces="false"></fb:like>
+					</div>
+					<div class="soc_holder">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.pixartheory.com" data-text="The Pixar Theory, an Interactive Story by @97thFloor" data-hashtags="pixartheory">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</div>
+					<div class="soc_holder">
+						<div class="g-plus" data-action="share" data-annotation="bubble" data-height="15"></div>
+					</div>
+					<div class="soc_holder">
+						<script src="//platform.linkedin.com/in.js" type="text/javascript">
+						 lang: en_US
+						</script>
+						<script type="IN/Share" data-url="www.pixartheory.com"></script>
+					</div>
+				</div>
+				<div class="bottom_btn_holder">
+					<a>sources</a>
+					<div class="soc_holder">
+						Inspired By:
+						<a href="http://jonnegroni.com/2013/07/11/the-pixar-theory/" target="_blank" class="source_link">jonnegroni.com</a>
+					</div>
+				</div>
+			</div>
+			<div id="footer_mid">
+				<div class="nav_btns">
+					<div class="nav_pager"></div>
+					<div class="nav_left"></div>
+					<div class="nav_right nav_right_active"></div>
+				</div>
+			</div>
+			<div id="footer_right">
+				<div id="change_title"></div>
+					<div class="clear"></div>
+				<div id="change_sub_title"></div>
+			</div>
+		</div>
+	</div>
+	<div id="boo_bubble">Kitty!</div>
+	<div id="boo"></div>
+
+
+
+<!-- START: Livefyre Embed -->
+<script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+<script type="text/javascript">
+(function () {
+    var articleId = fyre.conv.load.makeArticleId(null);
+    fyre.conv.load({}, [{
+        el: 'livefyre-comments',
+        network: "livefyre.com",
+        siteId: "339371",
+        articleId: articleId,
+        signed: false,
+        collectionMeta: {
+            articleId: articleId,
+            url: fyre.conv.load.makeCollectionUrl(),
+        }
+    }], function() {});
+}());
+</script>
+<!-- END: Livefyre Embed -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/ui/jquery-ui-1.8.23.custom.min.js"></script>
+<script src="js/kinetic-v4.5.4.min.js"></script>
+<script src="js/greensock/TweenMax.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/movie-content.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-233742-22']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
